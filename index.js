@@ -2,12 +2,11 @@
 // with a higher dice roll
 function showWinner(dice1, dice2) {
     let heading = document.querySelector("h1");
+    heading.classList.add("smaller");
     if (dice1 > dice2) {
-        heading.classList.add("smaller");
         heading.innerHTML = "Player 1 Wins!!!";
     }
     else if (dice1 < dice2) {
-        heading.classList.add("smaller");
         heading.innerHTML = "Player 2 Wins!!!"
     }
     else {
